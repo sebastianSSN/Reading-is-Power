@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/dark_mode.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Reding Is Power</title>
+</head>
+
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+
+        <!-- Barra Buscar -->
+
+        <div class="search">
+            <form>
+                <input type="text" name="search" placeholder="Buscar..." class="src" autocomplete="off">
+            </form>
+        </div>
+
+        <!-- Dark Mode -->
+
+        <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+        </button>
+
+    </header>
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fas fa-book"></i>
+            <h4>Reading is Power</h4>
+        </div>
+        <div class="options__menu">
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="login/login.php">
+                <div class="option">
+                    <i class="fas fa-user"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- WAVE -->
+
+    <div class="container_wave">
+        <div class="bg_color"></div>
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+    </div>
+
+    <!-- Portada -->
+    <div class="cover">
+
+        <div class="container__cover">
+
+            <div class="container__info">
+                <h1>READING</h1>
+                <h2>IS POWER</h2>
+                <p>“De los diversos instrumentos inventados por el hombre, el más asombroso es el libro; todos los demás
+                    son extensiones de su cuerpo… Sólo el libro es una extensión de la imaginación y la memoria”. Jorge
+                    Luis Borges.</p>
+                <a href="https://youtu.be/_OFcWijeKXg" target="_blank"><button>¿Cómo crear el hábito de la lectura?</button></a>
+            </div>
+            <div class="container__vector">
+                <img src="img/portada.jpg" alt="Imagen Portada">
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+        <div class="main">
+
+            <input type="radio" id="0" name="categories" value="0" checked>
+            <input type="radio" id="1" name="categories" value="1">
+            <input type="radio" id="2" name="categories" value="2">
+            <input type="radio" id="3" name="categories" value="3">
+            <input type="radio" id="4" name="categories" value="4">
+            <input type="radio" id="5" name="categories" value="5">
+            <input type="radio" id="6" name="categories" value="6">
+            <input type="radio" id="7" name="categories" value="7">
+            <input type="radio" id="8" name="categories" value="8">
+
+            <div class="container-category">
+                <label for="0">Todos</label>
+                <label for="1">Literatura</label>
+                <label for="2">Cómic y fantasía</label>
+                <label for="3">Infantil y juvenil</label>
+                <label for="4">Actualidad y empresa</label>
+                <label for="5">Conocimiento y ciencia</label>
+                <label for="6">Cocina y gastronomia</label>
+                <label for="7">Bienestar y salud</label>
+                <label for="8">Viajes y ocio</label>
+            </div>
+
+            <div class="container__card">
+
+                <div class="card" data-category="1">
+                    <div class="icon">
+                        <img src="img/porta_libros/tras_los_pasos_de_Jane_Austen.jpg" alt="Porta de &quot;Tras los pasos de Jane Austen&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Tras los pasos de Jane Austen</h4>
+                        <p><span>Autor:</span> Espido Freire</p>
+                        <p><span>Categoria:</span> Literatura</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Ariel</p>
+                        <p><span>Sinopsis:</span> Este libro no es un ensayo al uso, tampoco un libro de viajes, aunque tenga mucho de ambos. Es un recorrido emocional por los territorios reales...</p>
+                        <button><a href="book/tras_los_pasos_de_Jane_Austen.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="1">
+                    <div class="icon">
+                        <img src="img/porta_libros/el_alma_de_las_piedras.jpg" alt="Porta de &quot;El alma de las piedras&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>El alma de las piedras</h4>
+                        <p><span>Autor:</span> Paloma Sánchez-Garnica</p>
+                        <p><span>Categoria:</span> Literatura</p>
+                        <p><span>Fecha de publicación:</span> 26/07/2021</p>
+                        <p><span>Editoria:</span>  Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> Corre el año 824 d. C. El ermitaño Paio, el obispo Teodomiro y su ayudante Martín de Bilibio hallan una tumba cuyos restos, aseguran...</p>
+                        <button><a href="book/el_alma_de_las_piedras.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="1">
+                    <div class="icon">
+                        <img src="img/porta_libros/la_dama_de_la_guerra.jpg" alt="Porta de &quot;La dama de la guerra&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>La dama de la guerra</h4>
+                        <p><span>Autor:</span> Marie Benedict</p>
+                        <p><span>Categoria:</span> Literatura</p>
+                        <p><span>Fecha de publicación:</span> 26/04/2021</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>                
+                        <p><span>Sinopsis:</span> Londres, 1909. La joven y recién casada Clementine Hoizer desciende los escalones de un tren del brazo de su marido, Winston Churchill...</p>        
+                        <button><a href="book/la_dama_de_la_guerra.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="1">
+                    <div class="icon">
+                        <img src="img/porta_libros/la_templanza.jpg" alt="Porta de &quot;La Templanza&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>La Templanza</h4>
+                        <p><span>Autor:</span> María Dueñas</p>
+                        <p><span>Categoria:</span> Literatura</p>
+                        <p><span>Fecha de publicación:</span> 23/03/2021</p>
+                        <p><span>Editoria:</span>  Booket</p>
+                        <p><span>Sinopsis:</span> Nada hacía suponer a Mauro Larrea que la fortuna que levantó tras años de tesón y arrojo se le derrumbaría con un estrepitoso revés...</p>
+                        <button><a href="book/la_templanza.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="2">
+                    <div class="icon">
+                        <img src="img/porta_libros/tierra_contrafuturo.jpg" alt="Porta de &quot;Tierra contrafuturo&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Tierra contrafuturo</h4>
+                        <p><span>Autor:</span> Luis Carlos Barragán</p>
+                        <p><span>Categoria:</span> Ciencia ficción</p>
+                        <p><span>Fecha de publicación:</span> 25/08/2021</p>
+                        <p><span>Editoria:</span> Minotauro</p>
+                        <p><span>Sinopsis:</span> El primer contacto extraterrestre ocurre en las selvas latinoamericanas. Dos colombianos sin nada que perder huyen en una nave...</p>
+                        <button><a href="book/tierra_contrafuturo.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="2">
+                    <div class="icon">
+                        <img src="img/porta_libros/el_tercer_mundo_después_del_sol.jpg" alt="Porta de &quot;El tercer mundo después del sol&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>El tercer mundo después del sol</h4>
+                        <p><span>Autor:</span> Rodrigo Bastidas</p>
+                        <p><span>Categoria:</span> Ciencia ficción</p>
+                        <p><span>Fecha de publicación:</span> 22/02/2021</p>
+                        <p><span>Editoria:</span> Minotauro</p>
+                        <p><span>Sinopsis:</span> Latinoamérica no es el tercer mundo, no es posibilidad de desarrollo, es una realidad en la que...</p>
+                        <button><a href="book/el_tercer_mundo_después_del_sol.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="2">
+                    <div class="icon">
+                        <img src="img/porta_libros/fahrenheit_451_100_aniversario.jpg" alt="Porta de &quot;Fahrenheit 451 100 aniversario&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Fahrenheit 451 100 aniversario</h4>
+                        <p><span>Autor:</span> Ray Bradbury</p>
+                        <p><span>Categoria:</span> Ciencia ficción</p>
+                        <p><span>Fecha de publicación:</span> 13/01/2021</p>
+                        <p><span>Editoria:</span> Minotauro</p>
+                        <p><span>Sinopsis:</span> Fahrenheit 451: la temperatura a la que el papel se enciende y arde. Guy Montag es un bombero y el trabajo de...</p>
+                        <button><a href="book/fahrenheit_451_100_aniversario.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="2">
+                    <div class="icon">
+                        <img src="img/porta_libros/1984.jpg" alt="Porta de &quot;1984&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>1984</h4>
+                        <p><span>Autor:</span> George Orwell</p>
+                        <p><span>Categoria:</span> Ciencia ficción</p>
+                        <p><span>Fecha de publicación:</span> 13/01/2021</p>
+                        <p><span>Editoria:</span> Minotauro</p>
+                        <p><span>Sinopsis:</span> En 1984, los ciudadanos de Londres ya no distinguen entre el aspecto privado y público de sus vidas. Empleando sus técnicas de vigilancia...</p>
+                        <button><a href="book/1984.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="3">
+                    <div class="icon">
+                        <img src="img/porta_libros/una_corte_de_llamas_plateadas.jpg"
+                            alt="Porta de &quot;Una corte de llamas plateadas&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Una corte de llamas plateadas</h4>
+                        <p><span>Autor:</span> Sarah J. Maas</p>
+                        <p><span>Categoria:</span> Juvenil</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> El esperado cuarto volumen de la saga Una corte de rosas y espinas. Desde que fue forzada a meterse en el Caldero y se convirtió en alta fae en...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="3">
+                    <div class="icon">
+                        <img src="img/porta_libros/escape.jpg" alt="Porta de &quot;Escape&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Escape</h4>
+                        <p><span>Autor:</span> Dross</p>
+                        <p><span>Categoria:</span> Juvenil</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Martínez Roca</p>
+                        <p><span>Sinopsis:</span> Draco es un ser despreciable, incorregible, abominable. Por golpe del destino o castigo celestial, deberá salir a la calle e intentar sobrevivir..</p>
+                        <button><a href="book/escape.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="3">
+                    <div class="icon">
+                        <img src="img/porta_libros/universo_wigetta_2_La_evolucion.jpg" alt="Porta de &quot;Universo Wigetta 2. La evolución&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Universo Wigetta 2. La evolución</h4>
+                        <p><span>Autor:</span> Vegetta777 y Willyrex</p>
+                        <p><span>Categoria:</span> Juvenil</p>
+                        <p><span>Fecha de publicación:</span> 07/04/2021</p>
+                        <p><span>Editoria:</span> Martínez Roca</p>
+                        <p><span>Sinopsis:</span> Willy y Vegetta han logrado escapar del infierno con ayuda de Trotuman y Vakypandy, pero lo que...</p>
+                        <button><a href="book/universo_wigetta_2_La_evolucion.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="3">
+                    <div class="icon">
+                        <img src="img/porta_libros/el_campamento.jpg" alt="Porta de &quot;El campamento&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>El campamento</h4>
+                        <p><span>Autor:</span> Blue Jeans</p>
+                        <p><span>Categoria:</span> Juvenil</p>
+                        <p><span>Fecha de publicación:</span> 26/04/2021</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> Diez de los chicos más prometedores del país, menores de 23 años, han sido invitados a un campamento muy especial en los...</p>
+                        <button><a href="book/el_campamento.html">Leer Más</a></button>
+
+                    </div>
+                </div>
+                <div class="card" data-category="4">
+                    <div class="icon">
+                        <img src="img/porta_libros/pensando_en_colombia.jpg" alt="Porta de &quot;Pensando en Colombia&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Pensando en Colombia</h4>
+                        <p><span>Autor:</span> Facundo Manes | Mateo Niro</p>
+                        <p><span>Categoria:</span> Actualidad y empresa</p>
+                        <p><span>Fecha de publicación:</span> 23/06/2021 </p>
+                        <p><span>Editoria:</span> Ariel</p>
+                        <p><span>Sinopsis:</span> El libro que tiene en sus manos, iniciativa de Visión Colombia 2022, reúne un sinnúmero de propuestas que podrían ser la respuesta...</p>
+                        <button><a href="book/pensando_en_colombia.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="4">
+                    <div class="icon">
+                        <img src="img/porta_libros/contra_los_zombis.jpg" alt="Porta de &quot;Contra los zombis&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Contra los zombis</h4>
+                        <p><span>Autor:</span> Paul Krugman</p>
+                        <p><span>Categoria:</span> Actualidad y empresa</p>
+                        <p><span>Fecha de publicación:</span> 14/09/2020</p>
+                        <p><span>Editoria:</span> Editorial Crítica</p>
+                        <p><span>Sinopsis:</span> Nadie como Paul Krugman para acercarnos a los principales conceptos económicos y las ideas que mueven gran parte de nuestras...</p>
+                        <button><a href="book/contra_los_zombis.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="4">
+                    <div class="icon">
+                        <img src="img/porta_libros/las_edades_de_la_globalizacion.jpg" alt="Porta de &quot;Las edades de la globalización&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Las edades de la globalización</h4>
+                        <p><span>Autor:</span> Jeffrey D. Sachs</p>
+                        <p><span>Categoria:</span> Actualidad y empresa</p>
+                        <p><span>Fecha de publicación:</span> 23/06/2021</p>
+                        <p><span>Editoria:</span> Ariel</p>
+                        <p><span>Sinopsis:</span> Hoy en día los problemas más urgentes son fundamentalmente globales. Por ello, si queremos asegurar el futuro...</p>
+                        <button><a href="book/las_edades_de_la_globalizacion.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="4">
+                    <div class="icon">
+                        <img src="img/porta_libros/el_futuro_del_trabajo_y_el_trabajo_del_futuro.jpg" alt="Porta de &quot;El futuro del trabajo y el trabajo del futuro
+                        &quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>El futuro del trabajo y el trabajo del futuro</h4>
+                        <p><span>Autor:</span> Alejandro Melamed</p>
+                        <p><span>Categoria:</span> Actualidad y empresa</p>
+                        <p><span>Fecha de publicación:</span> 08/11/2019</p>
+                        <p><span>Editoria:</span> Paidós Empresa</p>
+                        <p><span>Sinopsis:</span> Suele decirse que el futuro es volátil, incierto, complejo y ambiguo: vivimos en un mundo “VICA”.  En este...</p>
+                        <button><a href="book/el_futuro_del_trabajo_y_el_trabajo_del_futuro.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="5">
+                    <div class="icon">
+                        <img src="img/porta_libros/ser_humanos.jpg" alt="Porta de &quot;Ser humanos&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Ser humanos</h4>
+                        <p><span>Autor:</span> Facundo Manes | Mateo Niro</p>
+                        <p><span>Categoria:</span> Conocimiento y ciencia</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> Estamos frente a una revolución como nunca antes había sucedido, un cambio profundo que no solo transforma lo que hacemos sino...</p>
+                        <button><a href="book/ser_humanos.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="5">
+                    <div class="icon">
+                        <img src="img/porta_libros/los_científicos_y_el_mundo.jpg" alt="Porta de &quot;Los científicos y el mundo&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Los científicos y el mundo</h4>
+                        <p><span>Autor:</span> Robert P. Crease</p>
+                        <p><span>Categoria:</span> Conocimiento y ciencia</p>
+                        <p><span>Fecha de publicación:</span> 13/01/2021</p>
+                        <p><span>Editoria:</span> Editorial Crítica</p>
+                        <p><span>Sinopsis:</span> ¿Cuándo un descubrimiento científico se convierte en un hecho ampliamente aceptado? ¿Por qué cuando se producen despiertan tanta...</p>
+                        <button><a href="book/los_científicos_y_el_mundo.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="5">
+                    <div class="icon">
+                        <img src="img/porta_libros/eso_lo_explica_todo.jpg" alt="Porta de &quot;Eso lo explica todo&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Eso lo explica todo</h4>
+                        <p><span>Autor:</span> John Brockman</p>
+                        <p><span>Categoria:</span> Conocimiento y ciencia</p>
+                        <p><span>Fecha de publicación:</span> 07/10/2019</p>
+                        <p><span>Editoria:</span> Ariel</p>
+                        <p><span>Sinopsis:</span> Jared Diamond sobre la electricidad biológica. Nassim Nicholas Taleb sobre el estrés positivo. Steven Pinker sobre las profundas raíces...</p>
+                        <button><a href="book/eso_lo_explica_todo.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="5">
+                    <div class="icon">
+                        <img src="img/porta_libros/creatividad.jpg" alt="Porta de &quot;Creatividad&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Creatividad</h4>
+                        <p><span>Autor:</span> Elkhonon Goldberg</p>
+                        <p><span>Categoria:</span> Conocimiento y ciencia</p>
+                        <p><span>Fecha de publicación:</span> 08/08/2019</p>
+                        <p><span>Editoria:</span> Editorial Crítica</p>
+                        <p><span>Sinopsis:</span> Creatividad es el primer libro que aborda estas y otras preguntas de una manera rigurosa y atractiva: Goldberg, neurocientífico...</p>
+                        <button><a href="book/creatividad.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="6">
+                    <div class="icon">
+                        <img src="img/porta_libros/no_le_tengas_miedo_a_la_cocina.jpg" alt="Porta de &quot;No le tengas miedo a la cocina&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>No le tengas miedo a la cocina</h4>
+                        <p><span>Autor:</span> Catalina Alba Cardenas | Yudy Angela Alvear Reyes</p>
+                        <p><span>Categoria:</span> Cocina y gastronomia</p>
+                        <p><span>Fecha de publicación:</span> 04/04/2016</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> Si las experiencias en la cocina siempre terminan en desastres con bomberos incluidos...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="6">
+                    <div class="icon">
+                        <img src="img/porta_libros/utensilios_y_tecnicas_de_cocina.jpg" alt="Porta de &quot;Utensilios y tecnicas de cocina&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Utensilios y tecnicas de cocina</h4>
+                        <p><span>Autor:</span> Williams-Sonoma</p>
+                        <p><span>Categoria:</span> Cocina y gastronomia</p>
+                        <p><span>Fecha de publicación:</span> 01/09/2009</p>
+                        <p><span>Editoria:</span> Libros Cúpula</p>
+                        <p><span>Sinopsis:</span> ¿Te interesa saber cuáles son los mejores recipientes o baterías para equipar tu cocina? ¿Cómo arreglar...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="6">
+                    <div class="icon">
+                        <img src="img/porta_libros/fundete_de_placer.jpg" alt="Porta de &quot;Fundete de placer&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Fundete de placer</h4>
+                        <p><span>Autor:</span> AA. VV.</p>
+                        <p><span>Categoria:</span> Cocina y gastronomia</p>
+                        <p><span>Fecha de publicación:</span> 01/01/2013</p>
+                        <p><span>Editoria:</span> Lunwerg Editores</p>
+                        <p><span>Sinopsis:</span> Una selección de sorprendentes recetas organizadas en función del tipo de chocolate que se utiliza para realizar el postre en...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="6">
+                    <div class="icon">
+                        <img src="img/porta_libros/lo_que_se_cocina_para_sazonar_la_vida.jpg" alt="Porta de &quot;Lo que se cocina para sazonar la vida&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Lo que se cocina para sazonar la vida</h4>
+                        <p><span>Autor:</span> Catalina Alba Cardenas</p>
+                        <p><span>Categoria:</span> Cocina y gastronomia</p>
+                        <p><span>Fecha de publicación:</span> 01/02/2018</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> Los que enseñan recetas para las 3 comidas del día, para los niños, para una persona, para cuatro, para...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="7">
+                    <div class="icon">
+                        <img src="img/porta_libros/esclavos_de_la_personalidad.jpg" alt="Porta de &quot;¿Esclavos de la personalidad?&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>¿Esclavos de la personalidad?</h4>
+                        <p><span>Autor:</span> Efrén Martínez</p>
+                        <p><span>Categoria:</span> Bienestar y salud</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Diana</p>
+                        <p><span>Sinopsis:</span> Desde hace 25 años, la personalidad del ser humano ha sido una de las pasiones de Efrén Martínez...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="7">
+                    <div class="icon">
+                        <img src="img/porta_libros/como.png" alt="Porta de &quot;COMO&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>COMO</h4>
+                        <p><span>Autor:</span> Dr. Carlos Jaramillo</p>
+                        <p><span>Categoria:</span> Bienestar y salud</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Editorial Planeta</p>
+                        <p><span>Sinopsis:</span> COMO es una guía clara y completa para que el alimento se convierta en su mejor medicina, porque la decisión de comer sano no es tan...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="7">
+                    <div class="icon">
+                        <img src="img/porta_libros/ahora_te_toca_ser_feliz.jpg" alt="Porta de &quot;Ahora te toca ser feliz&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Ahora te toca ser feliz</h4>
+                        <p><span>Autor:</span> Curro Cañete</p>
+                        <p><span>Categoria:</span> Bienestar y salud</p>
+                        <p><span>Fecha de publicación:</span> 24/05/2021</p>
+                        <p><span>Editoria:</span> Diana</p>
+                        <p><span>Sinopsis:</span> Hoy es un día importante. El único momento del que dispones, tu única herramienta, es el presente. Tras el éxito de El poder de confiar en ti, Curro...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="7">
+                    <div class="icon">
+                        <img src="img/porta_libros/lo_bueno_de_tener_un_mal_dia.jpg" alt="Porta de &quot;Lo bueno de tener un mal día&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Lo bueno de tener un mal día</h4>
+                        <p><span>Autor:</span> Anabel Gonzalez</p>
+                        <p><span>Categoria:</span> Bienestar y salud</p>
+                        <p><span>Fecha de publicación:</span> 23/06/2021</p>
+                        <p><span>Editoria:</span> Diana</p>
+                        <p><span>Sinopsis:</span> Pocos refranes han sido más perjudiciales que ese que dice que al mal tiempo hay que ponerle buena cara. Al mal tiempo hay que ponerle lágrimas o...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="8">
+                    <div class="icon">
+                        <img src="img/porta_libros/viaje_a_rusia.jpg" alt="Porta de &quot;Viaje a Rusia&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Viaje a Rusia</h4>
+                        <p><span>Autor:</span> Josep Pla</p>
+                        <p><span>Categoria:</span> Viajes y ocio</p>
+                        <p><span>Fecha de publicación:</span> 10/06/2019</p>
+                        <p><span>Editoria:</span> Destino</p>
+                        <p><span>Sinopsis:</span> En 1925, un joven Josep Pla fue enviado como corresponsal a Rusia para escribir una serie de artículos para el periódico La Publicitat. A sus 28 años...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="8">
+                    <div class="icon">
+                        <img src="img/porta_libros/nueva_york _1001_Ideas_para_concer_la_ciudad.jpg" alt="Porta de &quot;Nueva york - 1001 Ideas para concer la ciudad&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Nueva york - 1001 Ideas para concer la ciudad</h4>
+                        <p><span>Autor:</span> AA. VV.</p>
+                        <p><span>Categoria:</span> Viajes y ocio</p>
+                        <p><span>Fecha de publicación:</span> 01/01/2012</p>
+                        <p><span>Editoria:</span> Lunwerg Editores</p>
+                        <p><span>Sinopsis:</span> Una nueva manera de descubrir la ciudad a través de 1001 ideas inéditas que no encontraréis en...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="8">
+                    <div class="icon">
+                        <img src="img/porta_libros/colombianadas.jpg" alt="Porta de &quot;Colombianadas&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Colombianadas</h4>
+                        <p><span>Autor:</span> Mauricio Quintero</p>
+                        <p><span>Categoria:</span> Viajes y ocio</p>
+                        <p><span>Fecha de publicación:</span> 01/02/2014</p>
+                        <p><span>Editoria:</span> Diana</p>
+                        <p><span>Sinopsis:</span> ¿Se ha puesto a pensar cómo sería la traducción al inglés de las expresiones más colombianas de todas? ¿Cómo expresar en la lengua de...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+                <div class="card" data-category="8">
+                    <div class="icon">
+                        <img src="img/porta_libros/los_mas_duros_de_la_historia.jpg" alt="Porta de &quot;Los mas duros de la historia&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Los mas duros de la historia</h4>
+                        <p><span>Autor:</span> Ben Thompson</p>
+                        <p><span>Categoria:</span> Viajes y ocio</p>
+                        <p><span>Fecha de publicación:</span> 01/03/2011</p>
+                        <p><span>Editoria:</span> Ediciones Temas de Hoy</p>
+                        <p><span>Sinopsis:</span> Unos acaparan los libros de texto y otros son más misteriosos y oscuros, pero todos los personajes de este libro son hombres y mujeres que...</p>
+                        <button><a href="book/una_corte_de_llamas_plateadas.html">Leer Más</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="nex_page">
+                <button class="actual"><a href="#">1</a></button>
+                <button><a href="#">2</a></button>
+                <button><a href="#">3</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- Boton de ir hacia arriba -->
+    <div class="button-up" id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--container-redes-sociales-->
+    <div class="container-redes">
+        <a href="#">
+            <!-- target="_blank" -->
+            <img src="img/icon-whatsapp.png" title="Enviar mensaje de WhatsApp">
+        </a>
+        <a href="#">
+            <!-- target="_blank" -->
+            <img src="img/icon-messenger.png" title="Enviar mensaje por Messenger">
+        </a>
+    </div>
+    <!-- Footer/Pie de pagina -->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="Logo Pagina">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ullam a ex! Quo, repudiandae
+                        inventore, dolorum aperiam, eaque totam at dolor vitae consectetur neque aut. Ipsa iusto et
+                        assumenda necessitatibus.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="#">App Desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href="#"><img src="img/unab.png" alt=""><span>Unab</span></a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>SebastianSSN</b></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
