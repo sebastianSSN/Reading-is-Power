@@ -13,7 +13,6 @@ body {
     margin-top: 80px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     background-image: url(../img/fondo.jpg);
-    
 }
 
 header {
@@ -35,6 +34,12 @@ section {
     box-shadow: 5px 5px 20px black;
     border-radius: 7px;
     border-top: solid black 45px;
+}
+
+.container{
+    background-color: #222;
+    margin: 30px auto;
+    border-radius: 5px;
 }
 
 /* barra de busqueda */
@@ -182,6 +187,7 @@ input.src:hover {
 
 .options__menu .option h4 {
     font-weight: 300;
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -728,6 +734,7 @@ footer {
 
 .box__footer h2 {
     margin-bottom: 30px;
+    font-size: 1.2em;
     color: white;
     font-weight: 700;
 }
