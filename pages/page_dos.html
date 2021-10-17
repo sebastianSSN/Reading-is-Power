@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/dark_mode.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Pagina 2</title>
+</head>
+
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+
+        <!-- Barra Buscar -->
+
+        <div class="search">
+            <form>
+                <input type="text" name="search" placeholder="Buscar..." class="src" autocomplete="off">
+            </form>
+        </div>
+
+        <!-- Dark Mode -->
+
+        <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+        </button>
+
+    </header>
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fas fa-book"></i>
+            <h4>Reading is Power</h4>
+        </div>
+        <div class="options__menu">
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="login/login.php">
+                <div class="option">
+                    <i class="fas fa-user"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+            <a href="lista_deseo/lista_deseo.html">
+                <div class="option">
+                    <i class="fas fa-list-alt"></i>
+                    <h4>Lista de deseos</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- WAVE -->
+
+    <div class="container_wave">
+        <div class="bg_color"></div>
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+    </div>
+
+    <section>
+        <div class="main">
+
+            <input type="radio" id="0" name="categories" value="0" checked>
+            <input type="radio" id="1" name="categories" value="1">
+            <input type="radio" id="2" name="categories" value="2">
+            <input type="radio" id="3" name="categories" value="3">
+            <input type="radio" id="4" name="categories" value="4">
+            <input type="radio" id="5" name="categories" value="5">
+            <input type="radio" id="6" name="categories" value="6">
+            <input type="radio" id="7" name="categories" value="7">
+            <input type="radio" id="8" name="categories" value="8">
+
+            <div class="container-category">
+                <label for="0">Todos</label>
+                <label for="1">Literatura</label>
+                <label for="2">Cómic y fantasía</label>
+                <label for="3">Infantil y juvenil</label>
+                <label for="4">Actualidad y empresa</label>
+                <label for="5">Conocimiento y ciencia</label>
+                <label for="6">Cocina y gastronomia</label>
+                <label for="7">Bienestar y salud</label>
+                <label for="8">Viajes y ocio</label>
+            </div>
+            <div class="container__card">
+                <div class="card" data-category="1">
+                    <div class="icon">
+                        <img src="../img/porta_libros/tras_los_pasos_de_Jane_Austen.jpg" alt="Porta de &quot;Tras los pasos de Jane Austen&quot;">
+                    </div>
+                    <div class="info__description">
+                        <h4>Tras los pasos de Jane Austen</h4>
+                        <p><span>Autor:</span> Espido Freire</p>
+                        <p><span>Categoria:</span> Literatura</p>
+                        <p><span>Fecha de publicación:</span> 27/09/2021</p>
+                        <p><span>Editoria:</span> Ariel</p>
+                        <p><span>Sinopsis:</span> Este libro no es un ensayo al uso, tampoco un libro de viajes, aunque tenga mucho de ambos. Es un recorrido emocional por los territorios reales...</p>
+                        <button><a href="../book/tras_los_pasos_de_Jane_Austen.html">Leer Más</a></button>
+                    </div>
+                </div>
+            <div class="nex_page">
+                <a href="../index.html"><button class="actual">1</button></a>
+                <a href="#"><button>2</button></a>
+                <a href="#"><button>3</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boton de ir hacia arriba -->
+    <div class="button-up" id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--container-redes-sociales-->
+    <div class="container-redes">
+        <a href="#">
+            <!-- target="_blank" -->
+            <img src="../img/icon-whatsapp.png" title="Enviar mensaje de WhatsApp">
+        </a>
+        <a href="#">
+            <!-- target="_blank" -->
+            <img src="../img/icon-messenger.png" title="Enviar mensaje por Messenger">
+        </a>
+    </div>
+    <!-- Footer/Pie de pagina -->
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="../img/logo.jpg" alt="Logo Pagina">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ullam a ex! Quo, repudiandae
+                        inventore, dolorum aperiam, eaque totam at dolor vitae consectetur neque aut. Ipsa iusto et
+                        assumenda necessitatibus.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="#">App Desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href="#"><img src="../img/unab.png" alt=""><span>Unab</span></a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>SebastianSSN</b></p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

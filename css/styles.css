@@ -36,7 +36,7 @@ section {
     border-top: solid black 45px;
 }
 
-.container{
+.container {
     background-color: #222;
     margin: 30px auto;
     border-radius: 5px;
@@ -62,7 +62,7 @@ input.src {
     transition: all .5s;
 }
 
-input.src:hover {
+input.src:focus {
     width: 200px;
     background-color: #fff;
     border-color: #d14701;
@@ -93,6 +93,33 @@ input.src:hover {
 
 .button_search:hover {
     background: #d14701;
+}
+
+#box-search {
+    position: fixed;
+    top: 33px;
+    left: 200px;
+    transform: translateX(-50%);
+    width: 400px;
+    background: white;
+    overflow: hidden;
+    display: none;
+    border-radius: 20px;
+}
+
+#box-search li a {
+    display: block;
+    color: #777777;
+    padding: 6px 20px;
+}
+
+#box-search li a:hover {
+    background: #f3f3f3;
+}
+
+#box-search li a i {
+    margin-right: 10px;
+    color: #535353;
 }
 
 /* menu */
@@ -536,35 +563,32 @@ a.selected {
 
 /* siguiente paguina */
 
-.nex_page{
+.nex_page {
     text-align: center;
 }
 
-.nex_page button{
+.nex_page button {
     background-color: #f95303;
     border-radius: 100%;
     padding: 15px 20px;
     margin: 5px 10px;
     cursor: pointer;
     border: none;
-}
-
-.nex_page .actual{
-    background-color: #FEBA0B;
-    border: 3px #FEBA0B solid;
-}
-
-.nex_page button a{
     font-size: 15px;
     color: white;
 }
 
-.nex_page .actual:hover{
+.nex_page .actual {
+    background-color: #FEBA0B;
+    border: 3px #FEBA0B solid;
+}
+
+.nex_page .actual:hover {
     border: 3px #d89d08 solid;
     transition: 500ms;
 }
 
-.nex_page button:hover{
+.nex_page button:hover {
     box-shadow: 1px 1px 30px gray;
     border: 3px #d14701 solid;
     transition: 500ms;
@@ -573,27 +597,27 @@ a.selected {
 /* estilos para contenido las paginas libro */
 
 .info__libros .portada_libro {
-    position:absolute;
-    width:200px;
-    margin:10px;
+    position: absolute;
+    width: 200px;
+    margin: 10px;
 }
 
 .info__libros .description_libro {
-    margin-left:220px;
+    margin-left: 220px;
     padding: 20px;
 }
 
-.info__libros .description_libro h3{
+.info__libros .description_libro h3 {
     margin: 10px 0;
 }
 
-.info__libros .description_libro span{
+.info__libros .description_libro span {
     color: #f95303;
     font-weight: 600;
     margin-right: 5px;
 }
 
-.info__libros .description_libro p{
+.info__libros .description_libro p {
     font-weight: 600;
 }
 
@@ -623,7 +647,7 @@ a.selected {
     color: white;
 }
 
-#disqus_thread{
+#disqus_thread {
     background-color: white;
 }
 
@@ -825,7 +849,7 @@ footer {
         display: none;
     }
 
-    .info__libros .portada_libro{
+    .info__libros .portada_libro {
         position: relative;
         margin: auto;
         top: 20px;
@@ -833,6 +857,35 @@ footer {
 
     .info__libros .description_libro {
         margin-left: 0;
+    }
+
+    #box-search {
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .card {
+        margin-top: 100px;
+        box-shadow: 10px 10px 20px -10px #20202049;
+    }
+
+    .card .info__description {
+        margin-top: 0;
+        border-radius: 0px 0px 20px 20px;
+        background-color: rgb(214, 214, 214);
+    }
+
+    .card .icon {
+        margin-top: -110px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(214, 214, 214);
+    }
+
+    #box-search {
+        width: 250px;
+        left: 45px;
     }
 }
 

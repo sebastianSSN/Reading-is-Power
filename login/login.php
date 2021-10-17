@@ -16,15 +16,6 @@
         <div class="icon__menu">
             <i class="fas fa-bars" id="btn_open"></i>
         </div>
-
-        <!-- Barra Buscar -->
-
-        <div class="search">
-            <form>
-                <input type="text" name="search" placeholder="Buscar..." class="src" autocomplete="off">
-            </form>
-        </div>
-
     </header>
     <div class="menu__side" id="menu_side">
         <div class="name__page">
